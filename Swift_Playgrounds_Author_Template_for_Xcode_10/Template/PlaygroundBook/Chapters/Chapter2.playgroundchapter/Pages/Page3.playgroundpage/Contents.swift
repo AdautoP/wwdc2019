@@ -7,59 +7,39 @@
 //
 //
 //#-code-completion(everything, hide)
-//#-code-completion(identifier, show, startInsemination())
+//#-code-completion(identifier, show, manualInjection())
 import PlaygroundSupport
-func startInsemination(){
+func manualInjection(){
 if let controller = PlaygroundPage.current.liveView as? PlaygroundLiveViewMessageHandler{
     
     controller.send(.string("startInsemination"))
     }
 }
-
-//#-end-hidden-code
-
-//#-hidden-code
-
-// This Won't be shown
-
-//#-end-hidden-code
-
-
-//#-hidden-code
-// Beneath there is a markdown block
 //#-end-hidden-code
 
 /*:
  
- # Title
- ## Subtitle
+ # Fertilization
+ ## Natural Fertilization
  
- ### Paragraph
- 
- Normal Text
- 
- - Important:
- There are some other kinds of highlights.
+ ###
+ The first type of fertilization is the natural one. In case the sample of sperm is healthy enough, all that need to be done is incubate the ovule with the sperm on a favorable solution and let the fertilization occur.
  
  - Note:
- Give me an E Major, conductor.
+ The ovule produces a chemical that attracts the sperm. Try moving the ovule, the sperm will always try to reach it.
  
- + Important:
- This is very cool.
- 
- + Example:
- This is an example.
- 
- # Photo:
- ![Description of Photo](Alysson.HEIC "Um cara diferenciado")
- 
- # List:
- * First item
- * Second Item
- 
- # Link to Web:
- [Apple Site](htttp://www.apple.com)
- 
+ ## Manual Fertilization
+ ###
+ On the cases where the sperm is not healthy enough, manual fertilization is required. It consists on using a needle to inject the sperm directly inside the ovule.
+ ###
+ Try injecting the sperm inside the ovule using the command below:
+ - Example:
+ manualInjection()
+ */
+
+/*#-editable-code Try injection*//*#-end-editable-code*/
+
+/*:
  # Link to other Pages:
  [Next Page: Num Sei](@next)
  
@@ -67,5 +47,5 @@ if let controller = PlaygroundPage.current.liveView as? PlaygroundLiveViewMessag
  */
 
 
-/*#-editable-code Try insemination*//*#-end-editable-code*/
+
 

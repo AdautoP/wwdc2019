@@ -7,51 +7,26 @@
 //
 //#-end-hidden-code
 
-//#-hidden-code
-
-// This Won't be shown
-
-//#-end-hidden-code
-
-
-//#-hidden-code
-// Beneath there is a markdown block
-//#-end-hidden-code
 
 /*:
  
- # Title
- ## Subtitle
+ # Sperm Selection
  
- ### Paragraph
+ ###
  
- Normal Text
+ In normal conditions, this step requires no aditional effort. The sample is acquired by masturbation and stored properly if the donor has no problems with fertility, otherwise, it is required a manual selection of good sperm before storing them.
  
- - Important:
- There are some other kinds of highlights.
+ ###
+ A healthy sperm should have the right shape and mobility. The healthy sperms moves easily so they are more likely to reach the ovule. Also, it's shape influences on how easily he can penetrate the ovule.
  
- - Note:
- Give me an E Major, conductor.
- 
- + Important:
- This is very cool.
- 
- + Example:
- This is an example.
- 
- # Photo:
- ![Description of Photo](Alysson.HEIC "Um cara diferenciado")
- 
- # List:
- * First item
- * Second Item
- 
- # Link to Web:
- [Apple Site](htttp://www.apple.com)
+ ###
+ The perfect sperm should look like this:
+ ###
+ ![Healthy Sperm](SpermHealthy.png)
+ ###
+ Now it's your time to put practice your knowledge. Select the right sperm by clicking on it.
  
  # Link to other Pages:
- [Next Page: Num Sei](@next)
- 
- 
+ [Next Page: Fertilization](@next)
  */
 

@@ -24,6 +24,7 @@
 		30086A57223FE7240025842F /* ThirdPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A56223FE7240025842F /* ThirdPageController.swift */; };
 		301852E82243EDF000F31AB8 /* IntroductionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E72243EDF000F31AB8 /* IntroductionPageController.swift */; };
 		301852EA2243EE3C00F31AB8 /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E92243EE3C00F31AB8 /* SecondScene.swift */; };
+		301852EE224441C200F31AB8 /* SpermHealthy.png in Resources */ = {isa = PBXBuildFile; fileRef = 301852ED224441C200F31AB8 /* SpermHealthy.png */; };
 		30834674223AE11200360AD1 /* LastScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30834673223AE11200360AD1 /* LastScene.swift */; };
 		309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
 		309EA3AE2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
@@ -128,6 +129,7 @@
 		30086A56223FE7240025842F /* ThirdPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageController.swift; sourceTree = "<group>"; };
 		301852E72243EDF000F31AB8 /* IntroductionPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageController.swift; sourceTree = "<group>"; };
 		301852E92243EE3C00F31AB8 /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
+		301852ED224441C200F31AB8 /* SpermHealthy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpermHealthy.png; sourceTree = "<group>"; };
 		30834673223AE11200360AD1 /* LastScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScene.swift; sourceTree = "<group>"; };
 		309EA3AC2243D31100EC2DE3 /* Wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wrong.wav; sourceTree = "<group>"; };
 		309EA3AF2243D40E00EC2DE3 /* Correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Correct.wav; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		30BF06D92242E1A600651FB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				301852ED224441C200F31AB8 /* SpermHealthy.png */,
 				309EA3AF2243D40E00EC2DE3 /* Correct.wav */,
 				309EA3AC2243D31100EC2DE3 /* Wrong.wav */,
 				30086A4B223D90320025842F /* Assets.xcassets */,
@@ -482,6 +485,7 @@
 				309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */,
 				309EA3B02243D40E00EC2DE3 /* Correct.wav in Resources */,
 				30086A4C223D90320025842F /* Assets.xcassets in Resources */,
+				301852EE224441C200F31AB8 /* SpermHealthy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

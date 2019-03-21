@@ -24,9 +24,7 @@ class MoveComponent: GKAgent2D, GKAgentDelegate {
         guard let entity = entity as? Spermatozoon else { return }
         if !entity.isHealthy{
             
-        }
-        
-        
+        }    
     }
     required init?(coder aDecoder: NSCoder) {
         auxBehavior = GKBehavior()

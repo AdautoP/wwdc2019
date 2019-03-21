@@ -24,8 +24,8 @@ class Spermatozoon: GKEntity {
     var spermUnHealthyArray = {
         
         () -> [SKTexture] in
-        let spermNames = ["SpermBigHead","SpermDoubleHead","SpermDoubleTail"]
-        let random = Int.random(in: 0...2)
+        let spermNames = ["SpermBigHead","SpermDoubleHead","SpermDoubleTail","SpermDeformed"]
+        let random = Int.random(in: 0...3)
         let textureAtlas = SKTextureAtlas(named: spermNames[random])
         var auxArray = [SKTexture]()
         for i in 0..<textureAtlas.textureNames.count{
