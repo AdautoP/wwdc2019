@@ -9,8 +9,6 @@ import UIKit
 import GameplayKit
 
 class FirstScene: SKScene {
-    
-    var sceneDelegate: FirstSceneDelegate!
     var syringeAnimationArray = [SKTexture]()
     var testSpriteNode = SKSpriteNode()
     let uterusSprite = SKSpriteNode(imageNamed: "Uterus")
@@ -35,7 +33,8 @@ class FirstScene: SKScene {
         uterusSprite.position = CGPoint.zero
         uterusSprite.zPosition = -1
         testSpriteNode = SKSpriteNode(texture: syringeAnimationArray[0],size: CGSize(width: frame.size.width/4, height: frame.size.width/4))
-        testSpriteNode.position = CGPoint(x: self.uterusSprite.frame.size.width/2, y: testSpriteNode.size.height/2)
+        testSpriteNode.xScale = -1
+        testSpriteNode.position = CGPoint(x: 0, y: testSpriteNode.size.height/2)
         addChild(uterusSprite)
         addChild(testSpriteNode)
         addChild(cameraNode)
@@ -52,9 +51,6 @@ class FirstScene: SKScene {
         if !injectedHormone{
             testSpriteNode.run(SKAction.animate(with: syringeAnimationArray, timePerFrame: 0.08, resize: false, restore: true)) {
                 self.testSpriteNode.run(SKAction.move(to: CGPoint(x: 1000, y: self.testSpriteNode.position.y), duration: 1.0), completion: {
-                    //                if let sceneDelegate = self.sceneDelegate{
-                    //                    sceneDelegate.didFinishScene()
-                    //                }
                     let actionGroup = [SKAction.moveTo(x: self.uterusSprite.frame.size.width/4, duration: 1.0),SKAction.scale(to: 0.2, duration: 1.0)]
                     self.cameraNode.run(SKAction.group(actionGroup), completion: {
                         for i in 0...9{

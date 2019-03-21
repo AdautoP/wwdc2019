@@ -10,8 +10,8 @@ import PlaygroundSupport
 import GameplayKit
 import SpriteKit
 
-@objc(Book_Sources_SecondPageController)
-public class SecondPageController: UIViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer {
+@objc(Book_Sources_IntroductionPageController)
+public class IntroductionPageController: UIViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer {
     /*
      public func liveViewMessageConnectionOpened() {
      // Implement this method to be notified when the live view message connection is opened.
@@ -28,10 +28,9 @@ public class SecondPageController: UIViewController, PlaygroundLiveViewMessageHa
      */
     
     public func receive(_ message: PlaygroundValue) {
-        // Implement this method to receive messages sent from the process running Contents.swift.
-        // This method is *required* by the PlaygroundLiveViewMessageHandler protocol.
-        // Use this method to decode any messages sent as PlaygroundValue values and respond accordingly.
+        
     }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         EntityManager.shared.addSystem(type: SpriteComponent.self)
@@ -40,13 +39,13 @@ public class SecondPageController: UIViewController, PlaygroundLiveViewMessageHa
         self.view = SKView(frame: self.view.frame)
         if let view = self.view as! SKView? {
             // Load the SKScene from 'StageScene.sks'
-            let scene = SecondScene(size: CGSize(width: view.frame.size.width, height: view.frame.size.height))
+            let scene = IntroductionScene(size: CGSize(width: view.frame.size.width, height: view.frame.size.height))
             scene.scaleMode = .aspectFill
             view.presentScene(scene)
             view.ignoresSiblingOrder = true
-//            view.showsFPS = true
-//            view.showsNodeCount = true
-//            view.showsPhysics = true
+            view.showsFPS = true
+            view.showsNodeCount = true
+            view.showsPhysics = true
         }
     }
 }

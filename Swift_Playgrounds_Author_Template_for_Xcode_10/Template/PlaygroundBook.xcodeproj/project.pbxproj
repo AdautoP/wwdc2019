@@ -14,15 +14,16 @@
 		30086A3A223D41DE0025842F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A39223D41DE0025842F /* EntityManager.swift */; };
 		30086A3C223D5CB30025842F /* Ovule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A3B223D5CB30025842F /* Ovule.swift */; };
 		30086A3E223D6E570025842F /* FirstScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A3D223D6E570025842F /* FirstScene.swift */; };
-		30086A40223D6F090025842F /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A3F223D6F090025842F /* SecondScene.swift */; };
 		30086A42223D78D90025842F /* EntityContactProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A41223D78D90025842F /* EntityContactProtocol.swift */; };
 		30086A46223D7B090025842F /* BitMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A45223D7B090025842F /* BitMask.swift */; };
 		30086A4C223D90320025842F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30086A4B223D90320025842F /* Assets.xcassets */; };
 		30086A4D223D92F90025842F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30086A4B223D90320025842F /* Assets.xcassets */; };
-		30086A4F223DE6850025842F /* FirstSceneAux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A4E223DE6850025842F /* FirstSceneAux.swift */; };
+		30086A4F223DE6850025842F /* IntroductionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A4E223DE6850025842F /* IntroductionScene.swift */; };
 		30086A51223DE7BB0025842F /* FirstSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A50223DE7BB0025842F /* FirstSceneDelegate.swift */; };
 		30086A55223FE64E0025842F /* SecondPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A54223FE64E0025842F /* SecondPageController.swift */; };
 		30086A57223FE7240025842F /* ThirdPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A56223FE7240025842F /* ThirdPageController.swift */; };
+		301852E82243EDF000F31AB8 /* IntroductionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E72243EDF000F31AB8 /* IntroductionPageController.swift */; };
+		301852EA2243EE3C00F31AB8 /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E92243EE3C00F31AB8 /* SecondScene.swift */; };
 		30834674223AE11200360AD1 /* LastScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30834673223AE11200360AD1 /* LastScene.swift */; };
 		309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
 		309EA3AE2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
@@ -118,14 +119,15 @@
 		30086A39223D41DE0025842F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		30086A3B223D5CB30025842F /* Ovule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ovule.swift; sourceTree = "<group>"; };
 		30086A3D223D6E570025842F /* FirstScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScene.swift; sourceTree = "<group>"; };
-		30086A3F223D6F090025842F /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
 		30086A41223D78D90025842F /* EntityContactProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityContactProtocol.swift; sourceTree = "<group>"; };
 		30086A45223D7B090025842F /* BitMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMask.swift; sourceTree = "<group>"; };
 		30086A4B223D90320025842F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30086A4E223DE6850025842F /* FirstSceneAux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSceneAux.swift; sourceTree = "<group>"; };
+		30086A4E223DE6850025842F /* IntroductionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionScene.swift; sourceTree = "<group>"; };
 		30086A50223DE7BB0025842F /* FirstSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSceneDelegate.swift; sourceTree = "<group>"; };
 		30086A54223FE64E0025842F /* SecondPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageController.swift; sourceTree = "<group>"; };
 		30086A56223FE7240025842F /* ThirdPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageController.swift; sourceTree = "<group>"; };
+		301852E72243EDF000F31AB8 /* IntroductionPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageController.swift; sourceTree = "<group>"; };
+		301852E92243EE3C00F31AB8 /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
 		30834673223AE11200360AD1 /* LastScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScene.swift; sourceTree = "<group>"; };
 		309EA3AC2243D31100EC2DE3 /* Wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wrong.wav; sourceTree = "<group>"; };
 		309EA3AF2243D40E00EC2DE3 /* Correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Correct.wav; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		30086A52223FE5EA0025842F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				301852E72243EDF000F31AB8 /* IntroductionPageController.swift */,
 				5EF2F9AD2054BBF300191409 /* FirstPageController.swift */,
 				30086A54223FE64E0025842F /* SecondPageController.swift */,
 				30086A56223FE7240025842F /* ThirdPageController.swift */,
@@ -214,9 +217,9 @@
 		30086A53223FE5F00025842F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				30086A4E223DE6850025842F /* IntroductionScene.swift */,
 				30086A3D223D6E570025842F /* FirstScene.swift */,
-				30086A4E223DE6850025842F /* FirstSceneAux.swift */,
-				30086A3F223D6F090025842F /* SecondScene.swift */,
+				301852E92243EE3C00F31AB8 /* SecondScene.swift */,
 				30834673223AE11200360AD1 /* LastScene.swift */,
 			);
 			path = Scenes;
@@ -527,22 +530,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301852E82243EDF000F31AB8 /* IntroductionPageController.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
 				30086A57223FE7240025842F /* ThirdPageController.swift in Sources */,
 				30086A37223C6B850025842F /* MoveBehavior.swift in Sources */,
+				301852EA2243EE3C00F31AB8 /* SecondScene.swift in Sources */,
 				30086A55223FE64E0025842F /* SecondPageController.swift in Sources */,
 				30086A33223C1E6E0025842F /* MoveComponent.swift in Sources */,
 				30086A51223DE7BB0025842F /* FirstSceneDelegate.swift in Sources */,
 				30834674223AE11200360AD1 /* LastScene.swift in Sources */,
 				30086A30223C1E310025842F /* Spermatozoon.swift in Sources */,
 				30086A46223D7B090025842F /* BitMask.swift in Sources */,
-				30086A40223D6F090025842F /* SecondScene.swift in Sources */,
 				30086A3E223D6E570025842F /* FirstScene.swift in Sources */,
 				30086A35223C1E810025842F /* SpriteComponent.swift in Sources */,
 				30086A3C223D5CB30025842F /* Ovule.swift in Sources */,
 				30086A3A223D41DE0025842F /* EntityManager.swift in Sources */,
 				30086A42223D78D90025842F /* EntityContactProtocol.swift in Sources */,
-				30086A4F223DE6850025842F /* FirstSceneAux.swift in Sources */,
+				30086A4F223DE6850025842F /* IntroductionScene.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* FirstPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

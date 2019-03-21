@@ -9,57 +9,21 @@
 //#-code-completion(identifier, show, injectHormone(), extractOvules())
 //#-end-hidden-code
 
-//#-hidden-code
-
-// This Won't be shown
-
-//#-end-hidden-code
-
-
-//#-hidden-code
-// Beneath there is a markdown block
-//#-end-hidden-code
 
 /*:
  
- # Estimulation
- ## Subtitle
+ # The Importance of ART (Assisted Reproductive Technology)
+
  
- ### Paragraph
  
- Normal Text
- 
- - Important:
- There are some other kinds of highlights.
- 
+ ## Importance
+ ###
  - Note:
- Give me an E Major, conductor.
+ This playground is intended to be read by adults only.
  
- + Important:
- This is very cool.
- 
- + Example:
- This is an example.
- 
- # Photo:
- ![Description of Photo](Alysson.HEIC "Um cara diferenciado")
- 
- # List:
- * First item
- * Second Item
- 
- # Link to Web:
- [Apple Site](htttp://www.apple.com)
- 
- # Link to other Pages:
- [Next Page: Num Sei](@next)
- 
- Now, try to inject hormones with code.
- 
+ In 1978 Louise Brown became the first baby born by IVF (In Vitro Fertilization). Her birth revolutionized the field of reproductive medicin. Giving that approximately 1 in 8 heterossexual couples has difficult in conceiving and that homossexual couples and single parents often need clinical help to make a baby the demand for IVF has been growing.
+ ###
+ This playground wants to demystify the proccess of IVF and explain the step by step of how it works. I wanted to make it easy for people who need it to understand how it works, and encourage them to do it and realize their dream of parenthood.
  
  */
-
-
-
-/*#-editable-code Try injecting the hormone*//*#-end-editable-code*/
 

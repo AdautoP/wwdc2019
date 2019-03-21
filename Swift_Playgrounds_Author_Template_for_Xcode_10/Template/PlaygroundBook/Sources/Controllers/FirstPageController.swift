@@ -53,13 +53,12 @@ public class FirstPageController: UIViewController, PlaygroundLiveViewMessageHan
         if let view = self.view as! SKView? {
             // Load the SKScene from 'StageScene.sks'
             let scene = FirstScene(size: CGSize(width: view.frame.size.width, height: view.frame.size.height))
-            scene.sceneDelegate = self
             scene.scaleMode = .aspectFill
             view.presentScene(scene)
             view.ignoresSiblingOrder = true
-            view.showsFPS = true
-            view.showsNodeCount = true
-            view.showsPhysics = true
+//            view.showsFPS = true
+//            view.showsNodeCount = true
+//            view.showsPhysics = true
         }
     }
     func injectHormone(){
@@ -74,14 +73,6 @@ public class FirstPageController: UIViewController, PlaygroundLiveViewMessageHan
             if let scene = view.scene as? FirstScene{
                 scene.extractOvules()
             }
-        }
-    }
-}
-extension FirstPageController: FirstSceneDelegate{
-    func didFinishScene() {
-        if let view = view as? SKView{
-            let scene = FirstSceneAux(size: CGSize(width: view.frame.size.width, height: view.frame.size.height))
-            view.presentScene(scene, transition: SKTransition.fade(withDuration: 1.0))
         }
     }
 }
