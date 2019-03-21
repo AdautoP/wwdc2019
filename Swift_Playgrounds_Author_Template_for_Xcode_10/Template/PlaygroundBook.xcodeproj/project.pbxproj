@@ -24,6 +24,10 @@
 		30086A55223FE64E0025842F /* SecondPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A54223FE64E0025842F /* SecondPageController.swift */; };
 		30086A57223FE7240025842F /* ThirdPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30086A56223FE7240025842F /* ThirdPageController.swift */; };
 		30834674223AE11200360AD1 /* LastScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30834673223AE11200360AD1 /* LastScene.swift */; };
+		309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
+		309EA3AE2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
+		309EA3B02243D40E00EC2DE3 /* Correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AF2243D40E00EC2DE3 /* Correct.wav */; };
+		309EA3B12243D40E00EC2DE3 /* Correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AF2243D40E00EC2DE3 /* Correct.wav */; };
 		5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */; };
@@ -123,6 +127,8 @@
 		30086A54223FE64E0025842F /* SecondPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageController.swift; sourceTree = "<group>"; };
 		30086A56223FE7240025842F /* ThirdPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageController.swift; sourceTree = "<group>"; };
 		30834673223AE11200360AD1 /* LastScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScene.swift; sourceTree = "<group>"; };
+		309EA3AC2243D31100EC2DE3 /* Wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wrong.wav; sourceTree = "<group>"; };
+		309EA3AF2243D40E00EC2DE3 /* Correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Correct.wav; sourceTree = "<group>"; };
 		5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundBook.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
@@ -208,7 +214,6 @@
 		30086A53223FE5F00025842F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				30BF06D92242E1A600651FB4 /* Resources */,
 				30086A3D223D6E570025842F /* FirstScene.swift */,
 				30086A4E223DE6850025842F /* FirstSceneAux.swift */,
 				30086A3F223D6F090025842F /* SecondScene.swift */,
@@ -220,6 +225,8 @@
 		30BF06D92242E1A600651FB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				309EA3AF2243D40E00EC2DE3 /* Correct.wav */,
+				309EA3AC2243D31100EC2DE3 /* Wrong.wav */,
 				30086A4B223D90320025842F /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -343,6 +350,7 @@
 		5EF2F9A22054BB3E00191409 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				30BF06D92242E1A600651FB4 /* Resources */,
 				30086A53223FE5F00025842F /* Scenes */,
 				30086A52223FE5EA0025842F /* Controllers */,
 				30086A38223D41CF0025842F /* Utils */,
@@ -468,6 +476,8 @@
 			files = (
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
+				309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */,
+				309EA3B02243D40E00EC2DE3 /* Correct.wav in Resources */,
 				30086A4C223D90320025842F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +487,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30086A4D223D92F90025842F /* Assets.xcassets in Resources */,
+				309EA3B12243D40E00EC2DE3 /* Correct.wav in Resources */,
 				5EA2E3CA2056F35B00416A35 /* LiveViewTestAppLaunchScreen.storyboard in Resources */,
+				309EA3AE2243D31100EC2DE3 /* Wrong.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

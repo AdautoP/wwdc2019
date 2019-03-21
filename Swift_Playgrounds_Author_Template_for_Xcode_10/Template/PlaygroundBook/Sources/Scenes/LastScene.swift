@@ -38,7 +38,7 @@ class LastScene: SKScene {
         
         EntityManager.shared.addEntity(entity: ovule)
         for i in EntityManager.shared.moveComponents(){
-            if let entity = i.entity as? Spermatozoon {
+            if let _ = i.entity as? Spermatozoon {
                 i.auxBehavior = MoveBehavior(targetSpeed: 10,seek: ovule.moveComponent, avoid: EntityManager.shared.moveComponents(), shouldWander: true)
                 i.speed = 10
             }

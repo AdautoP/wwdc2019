@@ -12,6 +12,23 @@
 //#-hidden-code
 
 // This Won't be shown
+import PlaygroundSupport
+func injectHormone(){
+    if let controller = PlaygroundPage.current.liveView as? PlaygroundLiveViewMessageHandler{
+        
+//        let action = .string("inject")
+//        let target = .string("target")
+//        let message = .dictionary(["action": action, "target": target])
+        
+        controller.send(.string("injectHormone"))
+    }
+}
+
+func extractOvules(){
+    if let controller = PlaygroundPage.current.liveView as? PlaygroundLiveViewMessageHandler{
+        controller.send(.string("extractOvules"))
+    }
+}
 
 //#-end-hidden-code
 

@@ -10,6 +10,7 @@ import SpriteKit
 import GameplayKit
 
 class SecondScene: SKScene {
+    var didSelectSperm = false
     
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
@@ -66,8 +67,29 @@ class SecondScene: SKScene {
             guard let entity = node.entity as? Spermatozoon else {
                 return
             }
-            if entity.isHealthy{
-                //
+            if !didSelectSperm{
+                if entity.isHealthy{
+                    let correctNode = SKSpriteNode(imageNamed: "correct")
+                    correctNode.alpha = 0
+                    correctNode.zPosition = 1
+                    addChild(correctNode)
+                    correctNode.run(SKAction.playSoundFileNamed("Correct.wav", waitForCompletion: false))
+                    correctNode.run(SKAction.fadeIn(withDuration: 1.0)) {
+                        self.didSelectSperm = true
+                    }
+                }
+                else{
+                    let wrongNode = SKSpriteNode(imageNamed: "wrong")
+                    wrongNode.alpha = 0
+                    wrongNode.zPosition = 1
+                    addChild(wrongNode)
+                    wrongNode.run(SKAction.playSoundFileNamed("Wrong.wav", waitForCompletion: false))
+                    wrongNode.run(SKAction.fadeIn(withDuration: 1.0)) {
+                        wrongNode.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                            wrongNode.removeFromParent()
+                        })
+                    }
+                }
             }
         }
     }
