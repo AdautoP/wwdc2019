@@ -93,13 +93,17 @@ class LastScene: SKScene {
                     sperm.spriteComponent.sprite.zPosition = 1
                     syringeWithSperm.removeFromParent()
                     self.ovule.spriteComponent.sprite.run(SKAction.wait(forDuration: 1.0), completion: {
-                        self.ovule.spriteComponent.sprite.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                        self.ovule.spriteComponent.sprite.run(SKAction.scale(to: 0.01, duration: 1.0), completion: {
                             EntityManager.shared.removeEntity(entity: self.ovule)
                             let logoNode = SKSpriteNode(imageNamed: "Pregnant")
                             logoNode.size = CGSize(width: self.frame.size.width/2, height: self.frame.size.width/2)
-                            logoNode.alpha = 0
+                            logoNode.isHidden = true
+                            logoNode.run(SKAction.scale(to: 0.01, duration: 0),completion:{
+                                logoNode.isHidden = false
+                            
+                            })
                             self.addChild(logoNode)
-                            logoNode.run(SKAction.fadeIn(withDuration: 1.0))
+                            logoNode.run(SKAction.scale(to: 1.0, duration: 1.0))
                         })
                     })
                 })

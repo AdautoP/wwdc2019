@@ -68,6 +68,7 @@ class SecondScene: SKScene {
             }
             if !didSelectSperm{
                 if entity.isHealthy{
+                    entity.spriteComponent.sprite.removeFromParent()
                     let correctNode = SKSpriteNode(imageNamed: "correct")
                     correctNode.alpha = 0
                     correctNode.zPosition = 1
@@ -76,7 +77,6 @@ class SecondScene: SKScene {
                     correctNode.run(SKAction.fadeIn(withDuration: 0.5)) {
                         correctNode.run(SKAction.fadeOut(withDuration: 0.5), completion: {
                             correctNode.removeFromParent()
-                            entity.spriteComponent.sprite.removeFromParent()
                         })
                     }
                 }
