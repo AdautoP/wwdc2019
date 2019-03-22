@@ -11,6 +11,7 @@ import GameplayKit
 
 class LastScene: SKScene {
     var ovule = Ovule(position: .zero,size: CGSize(width: 200, height: 200), image: UIImage(named: "Ovule 7"))
+    
     var syringeSpermArray = [SKTexture]()
     var inseminated = false
     
@@ -19,6 +20,7 @@ class LastScene: SKScene {
         EntityManager.shared.scene = self
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
         backgroundColor = .white
+        ovule.spriteComponent.sprite.physicsBody?.mass = 100
         
         let textureAtlas = SKTextureAtlas(named: "SyringeSperm")
         for i in 0..<textureAtlas.textureNames.count{
@@ -93,7 +95,7 @@ class LastScene: SKScene {
                     self.ovule.spriteComponent.sprite.run(SKAction.wait(forDuration: 1.0), completion: {
                         self.ovule.spriteComponent.sprite.run(SKAction.fadeOut(withDuration: 1.0), completion: {
                             EntityManager.shared.removeEntity(entity: self.ovule)
-                            let logoNode = SKSpriteNode(imageNamed: "Logo")
+                            let logoNode = SKSpriteNode(imageNamed: "Pregnant")
                             logoNode.size = CGSize(width: self.frame.size.width/2, height: self.frame.size.width/2)
                             logoNode.alpha = 0
                             self.addChild(logoNode)

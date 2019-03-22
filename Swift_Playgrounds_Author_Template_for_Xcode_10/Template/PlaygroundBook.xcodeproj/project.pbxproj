@@ -25,6 +25,7 @@
 		301852E82243EDF000F31AB8 /* IntroductionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E72243EDF000F31AB8 /* IntroductionPageController.swift */; };
 		301852EA2243EE3C00F31AB8 /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301852E92243EE3C00F31AB8 /* SecondScene.swift */; };
 		301852EE224441C200F31AB8 /* SpermHealthy.png in Resources */ = {isa = PBXBuildFile; fileRef = 301852ED224441C200F31AB8 /* SpermHealthy.png */; };
+		305D0D3A224533BE0055DF5F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 305D0D39224533BE0055DF5F /* Logo.png */; };
 		30834674223AE11200360AD1 /* LastScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30834673223AE11200360AD1 /* LastScene.swift */; };
 		309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
 		309EA3AE2243D31100EC2DE3 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309EA3AC2243D31100EC2DE3 /* Wrong.wav */; };
@@ -130,10 +131,11 @@
 		301852E72243EDF000F31AB8 /* IntroductionPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageController.swift; sourceTree = "<group>"; };
 		301852E92243EE3C00F31AB8 /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
 		301852ED224441C200F31AB8 /* SpermHealthy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpermHealthy.png; sourceTree = "<group>"; };
+		305D0D39224533BE0055DF5F /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		30834673223AE11200360AD1 /* LastScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScene.swift; sourceTree = "<group>"; };
 		309EA3AC2243D31100EC2DE3 /* Wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wrong.wav; sourceTree = "<group>"; };
 		309EA3AF2243D40E00EC2DE3 /* Correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Correct.wav; sourceTree = "<group>"; };
-		5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundBook.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E086DC02051C5A7004D8D25 /* Creating Life.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Creating Life.playgroundbook"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
 		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		30BF06D92242E1A600651FB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				305D0D39224533BE0055DF5F /* Logo.png */,
 				301852ED224441C200F31AB8 /* SpermHealthy.png */,
 				309EA3AF2243D40E00EC2DE3 /* Correct.wav */,
 				309EA3AC2243D31100EC2DE3 /* Wrong.wav */,
@@ -241,7 +244,7 @@
 		5E086DA4204F706E004D8D25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */,
+				5E086DC02051C5A7004D8D25 /* Creating Life.playgroundbook */,
 				5EF2F9AB2054BBF300191409 /* libBook_Sources.a */,
 				5EA2E3BD2056F35A00416A35 /* LiveViewTestApp.app */,
 			);
@@ -393,7 +396,7 @@
 			);
 			name = PlaygroundBook;
 			productName = PlaygroundBook;
-			productReference = 5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */;
+			productReference = 5E086DC02051C5A7004D8D25 /* Creating Life.playgroundbook */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5EA2E3BC2056F35A00416A35 /* LiveViewTestApp */ = {
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				305D0D3A224533BE0055DF5F /* Logo.png in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
 				309EA3AD2243D31100EC2DE3 /* Wrong.wav in Resources */,
 				309EA3B02243D40E00EC2DE3 /* Correct.wav in Resources */,
@@ -611,7 +615,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /;
-				PLAYGROUND_BOOK_FILE_NAME = PlaygroundBook;
+				PLAYGROUND_BOOK_FILE_NAME = "Creating Life";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
@@ -625,7 +629,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				INSTALL_PATH = /;
-				PLAYGROUND_BOOK_FILE_NAME = PlaygroundBook;
+				PLAYGROUND_BOOK_FILE_NAME = "Creating Life";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
