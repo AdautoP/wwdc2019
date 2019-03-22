@@ -73,8 +73,8 @@ class SecondScene: SKScene {
                     correctNode.zPosition = 1
                     addChild(correctNode)
                     correctNode.run(SKAction.playSoundFileNamed("Correct.wav", waitForCompletion: false))
-                    correctNode.run(SKAction.fadeIn(withDuration: 1.0)) {
-                        correctNode.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                    correctNode.run(SKAction.fadeIn(withDuration: 0.5)) {
+                        correctNode.run(SKAction.fadeOut(withDuration: 0.5), completion: {
                             correctNode.removeFromParent()
                             entity.spriteComponent.sprite.removeFromParent()
                         })
@@ -86,8 +86,8 @@ class SecondScene: SKScene {
                     wrongNode.zPosition = 1
                     addChild(wrongNode)
                     wrongNode.run(SKAction.playSoundFileNamed("Wrong.wav", waitForCompletion: false))
-                    wrongNode.run(SKAction.fadeIn(withDuration: 1.0)) {
-                        wrongNode.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                    wrongNode.run(SKAction.fadeIn(withDuration: 0.5)) {
+                        wrongNode.run(SKAction.fadeOut(withDuration: 0.5), completion: {
                             wrongNode.removeFromParent()
                         })
                     }

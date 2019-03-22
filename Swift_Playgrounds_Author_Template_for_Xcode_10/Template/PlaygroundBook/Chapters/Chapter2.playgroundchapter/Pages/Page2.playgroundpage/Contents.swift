@@ -23,7 +23,7 @@
  ###
  ![Healthy Sperm](SpermHealthy.png)
  ###
- Now it's your time to practice your knowledge. Collect the right sperm by clicking on it.
+ Now it's your time to practice your knowledge. Collect the right sperm by **touching** it.
  
  [Next Page: Fertilization](@next)
  */
