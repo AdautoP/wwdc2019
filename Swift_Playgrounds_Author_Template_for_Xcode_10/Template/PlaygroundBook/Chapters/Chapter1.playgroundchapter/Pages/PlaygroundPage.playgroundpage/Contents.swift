@@ -15,14 +15,9 @@
  
  
  ## Importance
- ###
- - Important:
- This playground is intended to be read by adults only.
  
- - Note:
- It's based on this TedEd video: [How In Vitro Fertilization Works](https://www.youtube.com/watch?v=P27waC05Hdk&t=34s)
  ###
- In 1978 Louise Brown became the first baby born by IVF (In Vitro Fertilization). Her birth revolutionized the field of reproductive medicine. Giving that approximately 1 in 8 heterossexual couples has difficult in conceiving and that homossexual couples and single parents often need clinical help to make a baby, the demand for IVF has been growing.
+ In 1978 Louise Brown became known by being the first baby born by IVF (In Vitro Fertilization) in the world. It was an achievement that revolutionized the field of reproductive medicine. Taking into account that approximately 1 in 8 heterossexual couples has difficult in conceiving and that homossexual couples and single parents often need clinical help to make a baby, the demand for IVF has been growing.
  ###
  This playground wants to demystify the proccess of IVF and explain the step by step of how it works. The next pages will teach you the basics about IVF and guide you while you simulate the real steps yourself.
  ###

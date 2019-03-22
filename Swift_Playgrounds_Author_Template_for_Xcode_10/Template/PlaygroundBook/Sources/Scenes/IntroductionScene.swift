@@ -15,7 +15,12 @@ class IntroductionScene: SKScene {
         physicsWorld.contactDelegate = self
         EntityManager.shared.scene = self
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        backgroundColor = .white
+        backgroundColor = UIColor(red: 24/255, green: 15/255, blue: 66/255, alpha: 1)
+        let musicNode = SKAudioNode(fileNamed: "Background.mp3")
+        
+        musicNode.autoplayLooped = true
+        addChild(musicNode)
+        musicNode.run(SKAction.changeVolume(to: 0.2, duration: 0))
         
         
     }

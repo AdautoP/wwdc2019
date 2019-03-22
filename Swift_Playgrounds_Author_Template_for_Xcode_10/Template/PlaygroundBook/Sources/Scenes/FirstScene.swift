@@ -55,7 +55,7 @@ class FirstScene: SKScene {
                     self.cameraNode.run(SKAction.group(actionGroup), completion: {
                         for _ in 0...9{
                             let x = CGFloat.random(in: self.cameraNode.position.x - 25...self.cameraNode.position.x + 25)
-                            let y = CGFloat.random(in: self.cameraNode.position.y - 12.5...self.cameraNode.position.y + 50)
+                            let y = CGFloat.random(in: self.cameraNode.position.y - 12.5...self.cameraNode.position.y + 30)
                             let ovule = Ovule(position: CGPoint(x: x, y: y),size: CGSize(width: 25, height: 25), image: UIImage(named: "Ovule 0"), haveBody: false)
                             ovule.spriteComponent.sprite.zPosition = 1
                             
