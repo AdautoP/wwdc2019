@@ -53,7 +53,7 @@ class FirstScene: SKScene {
                 self.testSpriteNode.run(SKAction.move(to: CGPoint(x: 1000, y: self.testSpriteNode.position.y), duration: 1.0), completion: {
                     let actionGroup = [SKAction.moveTo(x: self.uterusSprite.frame.size.width/4, duration: 1.0),SKAction.scale(to: 0.2, duration: 1.0)]
                     self.cameraNode.run(SKAction.group(actionGroup), completion: {
-                        for i in 0...9{
+                        for _ in 0...9{
                             let x = CGFloat.random(in: self.cameraNode.position.x - 25...self.cameraNode.position.x + 25)
                             let y = CGFloat.random(in: self.cameraNode.position.y - 12.5...self.cameraNode.position.y + 50)
                             let ovule = Ovule(position: CGPoint(x: x, y: y),size: CGSize(width: 25, height: 25), image: UIImage(named: "Ovule 0"), haveBody: false)

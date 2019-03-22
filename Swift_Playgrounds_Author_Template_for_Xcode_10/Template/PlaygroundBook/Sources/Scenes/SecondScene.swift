@@ -74,7 +74,10 @@ class SecondScene: SKScene {
                     addChild(correctNode)
                     correctNode.run(SKAction.playSoundFileNamed("Correct.wav", waitForCompletion: false))
                     correctNode.run(SKAction.fadeIn(withDuration: 1.0)) {
-                        self.didSelectSperm = true
+                        correctNode.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                            correctNode.removeFromParent()
+                            entity.spriteComponent.sprite.removeFromParent()
+                        })
                     }
                 }
                 else{

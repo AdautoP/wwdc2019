@@ -2,12 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CutsceneReference</key>
+	<string>intro.html</string>
 	<key>Name</key>
-	<string>Introduction</string>
-	<key>Pages</key>
-	<array>
-		<string>Intro.cutscenepage</string>
-		<string>PlaygroundPage.playgroundpage</string>
-	</array>
+	<string>Cutscene</string>
 </dict>
 </plist>

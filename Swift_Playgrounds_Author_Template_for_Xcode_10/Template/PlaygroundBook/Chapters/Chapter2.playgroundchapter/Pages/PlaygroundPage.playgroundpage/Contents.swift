@@ -29,7 +29,6 @@ func collectOvules(){
         controller.send(.string("extractOvules"))
     }
 }
-
 //#-end-hidden-code
 
 /*:
@@ -64,6 +63,5 @@ func collectOvules(){
 */
 /*#-editable-code Try collecting ovules*/ /*#-end-editable-code*/
 /*:
- [Next Page: Selecting the Right Ones](@next)
+ [Next Page: Selecting the Right Spermatozoon](@next)
 */
-

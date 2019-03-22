@@ -40,12 +40,14 @@ if let controller = PlaygroundPage.current.liveView as? PlaygroundLiveViewMessag
 /*#-editable-code Try injection*//*#-end-editable-code*/
 
 /*:
- # Link to other Pages:
+ ###
+ That's it! The ovule is fertilized and ready to be put in the patient's uterus. Once this is a different technique, it won't be covered in this playground.
+ 
+ # Some extras about IVF:
+ * For homossexual women couples, it's possible to get a sperm donor, one of them's ovules and fertilize it and inseminate it on the other one so the couple will have biological children. It's a big advance in medicine.
+ * It's even possible that both the sperm and ovule are donated and can be inseminated into the patient. So in cases where both of the couple present any kind of infertility, they can still have children.
+ * Sometimes the couple is fertile but the woman can't gestate due another medical problems. In this case, it's even possible that the patients donate the sperm and ovule and find another woman to gestate.
+ 
  [Next Page: Num Sei](@next)
  
- 
  */
-
-
-
-

@@ -68,26 +68,41 @@ class LastScene: SKScene {
     }
     
     func startInsemination(){
-        EntityManager.shared.removeAll()
-        ovule = Ovule(position: .zero, size: CGSize(width: 200, height: 200), image: UIImage(named: "Ovule 7"), haveBody: true)
-        EntityManager.shared.addEntity(entity: ovule)
-        let syringeWithSperm = SKSpriteNode(texture: syringeSpermArray[0])
-        syringeWithSperm.size = CGSize(width: frame.size.width/4, height: frame.size.width/4)
-        syringeWithSperm.position = CGPoint(x: syringeWithSperm.size.width/2, y: syringeWithSperm.size.width/2)
-        syringeWithSperm.alpha = 0
-        addChild(syringeWithSperm)
-        syringeWithSperm.run(SKAction.fadeIn(withDuration: 1.0)) {
-            syringeWithSperm.run((SKAction.animate(with: self.syringeSpermArray, timePerFrame: 0.08,resize: false, restore: true)),completion: {
-                let sperm = Spermatozoon(position: self.ovule.spriteComponent.sprite.position, size: CGSize(width: 50, height: 50), isHealthy: true)
-                sperm.spriteComponent.sprite.physicsBody = nil
-                self.ovule.spriteComponent.sprite.physicsBody?.isDynamic = false
-                self.ovule.spriteComponent.sprite.addChild(sperm.spriteComponent.sprite)
-                EntityManager.shared.addEntity(entity: sperm)
-                sperm.spriteComponent.sprite.zPosition = 1
-                syringeWithSperm.removeFromParent()
-            })
+        for i in EntityManager.shared.entities{
+            if i.isKind(of: Spermatozoon.self){
+                let aux = i as! Spermatozoon
+                aux.spriteComponent.sprite.removeFromParent()
+            }
         }
-        
+        ovule.spriteComponent.sprite.run(SKAction.move(to: .zero, duration: 0.5)) {
+            let syringeWithSperm = SKSpriteNode(texture: self.syringeSpermArray[0])
+            syringeWithSperm.size = CGSize(width: self.frame.size.width/4, height: self.frame.size.width/4)
+            syringeWithSperm.position = CGPoint(x: syringeWithSperm.size.width/2, y: syringeWithSperm.size.width/2)
+            syringeWithSperm.alpha = 0
+            syringeWithSperm.zPosition = 2
+            self.addChild(syringeWithSperm)
+            syringeWithSperm.run(SKAction.fadeIn(withDuration: 1.0)) {
+                syringeWithSperm.run((SKAction.animate(with: self.syringeSpermArray, timePerFrame: 0.08,resize: false, restore: true)),completion: {
+                    let sperm = Spermatozoon(position: self.ovule.spriteComponent.sprite.position, size: CGSize(width: 50, height: 50), isHealthy: true)
+                    sperm.spriteComponent.sprite.physicsBody = nil
+                    self.ovule.spriteComponent.sprite.physicsBody?.isDynamic = false
+                    self.ovule.spriteComponent.sprite.addChild(sperm.spriteComponent.sprite)
+                    EntityManager.shared.addEntity(entity: sperm)
+                    sperm.spriteComponent.sprite.zPosition = 1
+                    syringeWithSperm.removeFromParent()
+                    self.ovule.spriteComponent.sprite.run(SKAction.wait(forDuration: 1.0), completion: {
+                        self.ovule.spriteComponent.sprite.run(SKAction.fadeOut(withDuration: 1.0), completion: {
+                            EntityManager.shared.removeEntity(entity: self.ovule)
+                            let logoNode = SKSpriteNode(imageNamed: "Logo")
+                            logoNode.size = CGSize(width: self.frame.size.width/2, height: self.frame.size.width/2)
+                            logoNode.alpha = 0
+                            self.addChild(logoNode)
+                            logoNode.run(SKAction.fadeIn(withDuration: 1.0))
+                        })
+                    })
+                })
+            }
+        }
     }
     func contactX(){
 //        if !inseminated{

@@ -26,10 +26,10 @@ class IntroductionScene: SKScene {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first{
-            let pos = touch.location(in: self)
-            let node = atPoint(pos)
-        }
+//        if let touch = touches.first{
+//            let pos = touch.location(in: self)
+//            let node = atPoint(pos)
+//        }
     }
 }
 
