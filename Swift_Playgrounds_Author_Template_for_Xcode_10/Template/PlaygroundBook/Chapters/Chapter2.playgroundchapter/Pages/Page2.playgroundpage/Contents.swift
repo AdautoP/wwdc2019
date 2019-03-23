@@ -13,7 +13,7 @@
  
  ###
  
- In normal conditions, this step requires no aditional effort. The sample is acquired by masturbation and stored properly if the donor has no problems with fertility, otherwise, it is required a manual selection of healthy sperm before storing them.
+ The samples are usually acquired by masturbation. If the donor has no problems with fertility they are stored properly. If the donor has problems with fertility, it is required a manual selection of healthy sperm before storing them.
  
  ###
  A healthy sperm should have the right shape and mobility. The healthy sperms moves **faster** so they are more likely to reach the ovule. Also, it's **shape** influences on how easily he can penetrate the ovule.

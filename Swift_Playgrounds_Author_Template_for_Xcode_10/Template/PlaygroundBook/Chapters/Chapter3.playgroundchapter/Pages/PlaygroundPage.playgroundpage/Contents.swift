@@ -13,7 +13,7 @@
  
  # Myself
  ###
- My name is Adauto Fernan Távora Pinheiro, I'm 24 years old. I'm currently a Computer Engineering Student and an Apple Developer Academy Student. I've been an Apple Developer Academy student for about 1 year now.
+ My name is Adauto Fernan Távora Pinheiro, I'm 24 years old. I'm currently a Computer Engineering Student and an Apple Developer Academy student. I've been an Apple Developer Academy student for about 1 year now.
  I love to code, play online games and watch tv shows. I love my family, my animals and my girlfriend, in fact, she is the main reason I chose this theme for this playground.
 
  # Motivation
@@ -26,7 +26,7 @@
  Some images are drawn by my girlfriend Beatriz, some are of my creation, some from internet free sources. All of them are vectorized by me.
  ## Sounds
  ###
- All of them are free sounds. The intro music is from a friend of a friend, Gabriel Fi is his channel on YouTube. The music name is The Stardust Surround Us. Special thanks to him.
+ All sounds are free from internet. Special thanks for Gabriel Fi (Youtube Channel) for the theme music: The Stardust Surround Us.
  ## Technical Information
  ###
  Most of the info is gathered from internet,specially from TedEd video: How In Vitro Fertilization Works.

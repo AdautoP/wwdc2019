@@ -105,7 +105,12 @@ class LastScene: SKScene {
                             })
                             self.addChild(logoNode)
                             self.run(SKAction.colorize(with: UIColor(red: 24/255, green: 15/255, blue: 66/255, alpha: 1), colorBlendFactor: 0, duration: 1.0))
-                            logoNode.run(SKAction.scale(to: 1.0, duration: 1.0))
+                            logoNode.run(SKAction.scale(to: 1.0, duration: 1.0),completion:{
+                                let musicNode = SKAudioNode(fileNamed: "Background.mp3")
+                                musicNode.autoplayLooped = true
+                                self.addChild(musicNode)
+                                musicNode.run(SKAction.changeVolume(to: 0.2, duration: 0))
+                            })
                         })
                     })
                 })
