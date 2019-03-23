@@ -17,7 +17,9 @@ class IntroductionScene: SKScene {
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
         backgroundColor = UIColor(red: 24/255, green: 15/255, blue: 66/255, alpha: 1)
         let musicNode = SKAudioNode(fileNamed: "Background.mp3")
-        
+        let pregnantNode = SKSpriteNode(imageNamed: "Pregnant")
+        pregnantNode.size = CGSize(width: frame.size.width/2, height: frame.size.width/2)
+        addChild(pregnantNode)
         musicNode.autoplayLooped = true
         addChild(musicNode)
         musicNode.run(SKAction.changeVolume(to: 0.2, duration: 0))

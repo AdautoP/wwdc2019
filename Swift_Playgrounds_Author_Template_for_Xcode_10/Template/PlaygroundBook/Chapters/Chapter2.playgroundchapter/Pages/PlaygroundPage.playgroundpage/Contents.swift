@@ -45,19 +45,17 @@ func collectOvules(){
  When assisting a fertilization, the doctor will administer FSH in the donor in a level that is higher than the natural, causing a controlled over stimulation on the ovary, that will result on much more follicles to get fully mature.
  
  ###
- Now it's your time to administer the hormone. Try the command below:
+ Now it's your time to administer the hormone. Try and run the command below:
  - Example:
  administerHormone()
  */
- 
 /*#-editable-code Try administering the hormone*/ /*#-end-editable-code*/
-
 /*:
  ## Collecting
  ###
  Once the follicles are mature, they are collected before ovulation. They ovules will be used later for the fertilization.
  ###
- Now it's your time again to collect the ovules. Try the command below:
+ Now it's your time again to collect the ovules. Try and run the command below:
  - Example:
  collectOvules()
 */

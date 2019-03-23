@@ -98,11 +98,13 @@ class LastScene: SKScene {
                             let logoNode = SKSpriteNode(imageNamed: "Pregnant")
                             logoNode.size = CGSize(width: self.frame.size.width/2, height: self.frame.size.width/2)
                             logoNode.isHidden = true
+                            
                             logoNode.run(SKAction.scale(to: 0.01, duration: 0),completion:{
                                 logoNode.isHidden = false
                             
                             })
                             self.addChild(logoNode)
+                            self.run(SKAction.colorize(with: UIColor(red: 24/255, green: 15/255, blue: 66/255, alpha: 1), colorBlendFactor: 0, duration: 1.0))
                             logoNode.run(SKAction.scale(to: 1.0, duration: 1.0))
                         })
                     })
